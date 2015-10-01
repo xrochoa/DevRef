@@ -1,0 +1,7 @@
+# OS X
+.DS_Store
+
+# Bower and npm
+bower_components/
+node_modules/
+bootstrap-4.0.0-alpha/
