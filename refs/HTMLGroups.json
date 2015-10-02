@@ -1,0 +1,14 @@
+{
+    "The Root Element": ["html"],
+    "Document Metadata": ["base", "head", "link", "meta", "style", "title"],
+    "Sections": ["address", "article", "aside", "body", "footer", "h1-h6", "header", "hgroup", "nav", "section"],
+    "Grouping Content": ["blockquote", "dd", "div", "dl", "dt", "figcaption", "figure", "hr", "li", "main", "ol", "p", "pre", "ul"],
+    "Text-level Semantics": ["a", "abbr", "b", "bdi", "bdo", "br", "cite", "code", "data", "dfn", "em", "i", "kbd", "mark", "q", "rp", "rt", "ruby", "s", "samp", "small", "span", "strong", "sub", "sup", "time", "u", "var", "wbr"],
+    "Links": ["abbr", "area"],
+    "Edits": ["del", "ins"],
+    "Embedded Content": ["area", "audio", "embed", "iframe", "img", "map", "math", "object", "param", "source", "svg", "track", "video"],
+    "Tabular Data": ["caption", "col", "colgroup", "table", "tbody", "td", "tfoot", "th", "thead", "tr"],
+    "Forms": ["button", "datalist", "fieldset", "form", "input", "keygen", "label", "legend", "meter", "optgroup", "option", "output", "progress", "select", "textarea"],
+    "Interactive Elements": ["details", "dialog", "menu", "menuitem", "summary"],
+    "Scripting": ["canvas", "noscript", "script", "template"]
+}

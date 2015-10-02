@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="blood">
+<html lang="en" class="blood" ng-app="DevRefApp" ng-controller="mainCtrl">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -7,87 +7,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
+    <!-- To avoid # in Angular -->
+    <base href="/">
+
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap-4.0.0-alpha/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- Custom CSS -->
-
-    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/bootstrapFixes.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsiveSquares.css">
+
+
+    <!-- Angular JS and Modules -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 
 </head>
 
 <body>
 
     <!-- Header -->
+    <header class="bg-dark sun" name="top">
 
-    <header class="text-center bg-dark sun">
+        <nav class="navbar navbar-fixed-top customnavbar navbar-light sun" id="nav">
+            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapsible">
+                &#9776; <strong>DEVREF</strong>
+            </button>
+            <div class="collapse navbar-toggleable-sm" id="collapsible">
+                <a class="navbar-brand hidden-sm-down" href="/"><strong>DEVREF</strong></a>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="nav-item" ng-repeat="navitem in data.MainArr | limitTo:6">
+                        <a class="nav-link" href="/{{navitem.name | lowercase}}">{{navitem.name | uppercase}}</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="navibar text-left sun" id="nav" style="display: none;">
-            <h3>
-                <img src="https://pbs.twimg.com/profile_images/1825435844/Duarte-CircleD-Logo2.png" height="50px">
-                <strong>DevRef</strong>
-            </h3>
-        </div>
-
-        <div class="header">
-            <img class="logo" src="https://pbs.twimg.com/profile_images/1825435844/Duarte-CircleD-Logo2.png">
-            <h1><strong>DevRef</strong></h1>
-            <p class="text-uppercase lead" id="navref">The complete reference for the Full-Stack Javascript Developer</p>
+        <div class="header text-center">
+            <img class="logo text-center" ng-src="{{data.header.img}}" ng-if="location">
+            <h1><img class="logo2" ng-src="{{data.header.img}}" ng-if="!location"><strong>{{data.header.name}}</strong></h1>
+            <p class="text-uppercase lead" id="navref">{{data.header.desc}}</p>
         </div>
 
     </header>
 
     <!-- Content -->
+    <section class="text-center blood">
 
-    <section class="text-center">
-
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">HTML</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">CSS</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Javascript</a></div>
-            </div>
-        </div>
-
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Bootstrap</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Sass</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Foundation</a></div>
-
-            </div>
-        </div>
-
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">JQuery</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Angular</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Phaser</a></div>
-            </div>
-        </div>
-
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">npm</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">bower</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">gulp</a></div>
-            </div>
-        </div>
-
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Node</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Express</a></div>
-                <div class="col-xs-4 nopad moon"><a class="nav-link text-warning navbutton" href="#">Mongo</a></div>
-            </div>
-        </div>
+        <div ng-view autoscroll></div>
 
     </section>
 
     <!-- Footer -->
-
     <footer class="text-center footer blood">
 
         <div>
@@ -102,10 +77,12 @@
 
     <!-- jQuery first, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="bootstrap-4.0.0-alpha/dist/js/bootstrap.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
-    <!-- Custom JQuery script -->
+    <!-- Custom JQuery and Angular scripts -->
     <script src="js/navbar.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>

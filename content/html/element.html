@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="col-xs-12 col-sm-12 thumb text-center">
+        <h1>{{data.HTMLElementsObj[params.HTMLElementId].tag}}</h1>
+        <p>{{data.HTMLElementsObj[params.HTMLElementId].desc}}</p>
+    </div>
+</div>
+
+<div class="col-xs-12 col-sm-12 bg-primary">
+    <div class="col-xs-3 col-sm-3 thumb text-center">ATTRIBUTES</div>
+    <div class="col-xs-3 col-sm-3 thumb text-center">PARENT</div>
+    <div class="col-xs-3 col-sm-3 thumb text-center">CHILD</div>
+    <div class="col-xs-3 col-sm-3 thumb text-center">DOM ACCESS</div>
+</div>
+
+<div class="col-xs-12 col-sm-12 square">
+    <div class="col-xs-3 col-sm-3 thumb text-center">
+        <span ng-repeat='attr in data.HTMLElementsObj[params.HTMLElementId].attr'>
+            <a href="#html/attributes/{{attr}}">{{attr}}</a></span>
+    </div>
+
+    <div class="col-xs-3 col-sm-3 thumb text-center"> <span ng-repeat='parent in data.HTMLElementsObj[params.HTMLElementId].parent'>{{parent}} </span>
+    </div>
+    <div class="col-xs-3 col-sm-3 thumb text-center"> <span ng-repeat='child in data.HTMLElementsObj[params.HTMLElementId].child'>{{child}} </span>
+    </div>
+    <div class="col-xs-3 col-sm-3 thumb text-center"><span>{{data.HTMLElementsObj[params.HTMLElementId].dom}}</span></div>
+</div>
+
+<div class="col-xs-12 col-sm-12 label-danger" ng-repeat="note in data.HTMLElementsObj[params.HTMLElementId].notes">
+    <ul>
+        <li class="text-left">{{note}}</li>
+    </ul>
+</div>
+<div class="col-xs-12 col-sm-12 bg-primary">
+    <div class="col-xs-6 col-sm-6 thumb text-center">Example Code</div>
+    <div class="col-xs-6 col-sm-6 thumb text-center">Rendered</div>
+</div>
+<div class="col-xs-12 col-sm-12">
+    <textarea rows="20" class="col-xs-6 col-sm-6 thumb text-left" contenteditable="true" ng-model="data.HTMLElementsObj[params.HTMLElementId].eg"></textarea>
+    <div class="col-xs-6 col-sm-6 thumb text-center">
+        <iframe width="100%" height="400px" srcdoc="{{trust(data.HTMLElementsObj[params.HTMLElementId].eg)}}"></iframe>
+
+    </div>
+</div>
