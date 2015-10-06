@@ -14,11 +14,7 @@
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/bootstrapFixes.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/responsiveSquares.css">
-
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Angular JS and Modules -->
     <script src="bower_components/angular/angular.js"></script>
@@ -28,55 +24,57 @@
 
 </head>
 
-<body>
+<body class="text-center blood">
 
     <!-- Header -->
-    <header class="bg-dark sun" name="top">
+    <header class="sun">
 
-        <nav class="navbar navbar-fixed-top customnavbar navbar-light sun" id="nav">
-            <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapsible">
-                &#9776; <strong>DEVREF</strong>
-            </button>
-            <div class="collapse navbar-toggleable-sm" id="collapsible">
-                <a class="navbar-brand hidden-sm-down" href="/"><strong>DEVREF</strong></a>
-                <ul class="nav navbar-nav pull-right">
-                    <li class="nav-item" ng-repeat="navitem in data.MainArr | limitTo:6">
-                        <a class="nav-link" href="/{{navitem.name | lowercase}}">{{navitem.name | uppercase}}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="header text-center">
-            <img class="logo text-center" ng-src="{{data.header.img}}" ng-if="location">
+        <!-- Title -->
+        <div class="header">
+            <img class="logo" ng-src="{{data.header.img}}" ng-if="location">
             <h1><img class="logo2" ng-src="{{data.header.img}}" ng-if="!location"><strong>{{data.header.name}}</strong></h1>
-            <p class="text-uppercase lead" id="navref">{{data.header.desc}}</p>
+            <p class="text-uppercase lead">{{data.header.desc}}</p>
         </div>
 
+        <!-- NavBar -->
+        <div id="navParent">
+            <nav class="navbar customnavbar navbar-light text-left sun"  id="nav" ng-show="!location">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible">
+                    &#9776; <strong>DEVREF</strong>
+                </button>
+
+                <div class="collapse" id="collapsible">
+                    <div class="p-a">
+                        <div class="row nav navbar-nav text-center">
+                            <div class="col-xs-4" ng-repeat="navitem in data.MainArr">
+                                <a class="nav-link" data-toggle="collapse" data-target="#collapsible" href="/{{navitem.name | lowercase}}">{{navitem.name | uppercase}}</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
     </header>
 
     <!-- Content -->
-    <section class="text-center blood">
+    <section class="blood" id="section">
 
         <div ng-view autoscroll></div>
 
     </section>
 
     <!-- Footer -->
-    <footer class="text-center footer blood">
+    <footer class="footer blood">
 
-        <div>
-            <small>Designed and coded by <a href='mailto:x.a.reyes-ochoa@hotmail.com'>Xavi Ro</a>. 2015</small>
-            <hr>
-            <small>"This is a work in progress"</small>
-
-        </div>
+        <small>Designed and coded by <a href='mailto:x.a.reyes-ochoa@hotmail.com'>Xavi Ro</a>. 2015</small>
 
     </footer>
 
 
     <!-- jQuery first, then Bootstrap JS. -->
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
     <!-- Custom JQuery and Angular scripts -->

@@ -175,5 +175,5 @@ angular.module("DevRefApp", ['ngRoute', 'ngAnimate', 'ngSanitize'])
             transclude: true,
             scope: false,
             template: '<div class="square"><div class="content"><div class="table"><div class="table-cell" ng-transclude></div></div></div></div>'
-        }
+        };
     });

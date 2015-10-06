@@ -1,8 +1,8 @@
 {
-  "name": "HTML",
+  "name": "DevRef",
   "version": "0.0.0",
-  "description": "",
-  "main": "",
+  "description": "DevRef",
+  "main": "server.js",
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
@@ -19,6 +19,6 @@
     "angular-route": "~1.4.6",
     "angular-sanitize": "~1.4.6",
     "angular-animate": "~1.4.6",
-    "bootstrap": "~4.0.0-alpha"
+    "bootstrap": "v4-dev??"
   }
 }

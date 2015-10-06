@@ -1,15 +1,25 @@
 $(function () {
     var nav = $('#nav');
-    var navref = $('#navref');
-
-    var navrefPosition = navref.offset().top;
+    var navParent = $('#navParent');
     var windowVar = $(window);
+
+    var navParentPosition, windowPosition;
+
+    function changingValues() {
+        navParentPosition = navParent.offset().top;
+        windowPosition = windowVar.scrollTop();
+    };
+
     windowVar.scroll(function () {
-        var windowPosition = windowVar.scrollTop();
-        if (windowPosition > navrefPosition) {
-            nav.fadeIn('fast');
+
+        changingValues();
+
+        if (windowPosition >= navParentPosition) {
+
+            nav.addClass('navbar-fixed-top');
+
         } else {
-            nav.fadeOut('fast');
+            nav.removeClass('navbar-fixed-top');
         }
     });
 });
