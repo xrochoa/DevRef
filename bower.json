@@ -1,24 +1,17 @@
 {
-  "name": "DevRef",
-  "version": "0.0.0",
-  "description": "DevRef",
-  "main": "server.js",
-  "moduleType": [],
-  "license": "MIT",
-  "homepage": "",
+  "name": "developercheatsheets",
+  "description": "developer cheatsheets",
+  "main": "gulpfile.js",
+  "authors": [
+    "Xavier Reyes Ochoa <x.a.reyes-ochoa@hotmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/xrochoa/DevRef",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ],
-  "dependencies": {
-    "angular": "~1.4.6",
-    "jquery": "~2.1.4",
-    "angular-route": "~1.4.6",
-    "angular-sanitize": "~1.4.6",
-    "angular-animate": "~1.4.6",
-    "bootstrap": "v4-dev??"
-  }
+  ]
 }
