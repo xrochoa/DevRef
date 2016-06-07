@@ -1,0 +1,29 @@
+nav {
+    background: $sun;
+    height: 40px;
+    @extend %box-shadow;
+    overflow: hidden; //hides wrapped content
+    position: relative; //floats on top of next element
+    @extend %flex-center;
+    div {
+        @extend %flex-center;
+        align-items: center; //vertical
+        flex-wrap: wrap;
+        height: 100%;
+        margin: 0;
+    }
+    button {
+        display: none;
+    }
+    a,
+    a:visited {
+        flex-grow: 1; //fills gaps
+        padding: 0 10px;
+        height: 100%;
+        transition: background .3s ease, color .3s ease;
+        &:hover {
+            color: $white;
+            background: rgba($black, 0.5);
+        }
+    }
+}

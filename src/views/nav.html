@@ -1,0 +1,6 @@
+<button>&#9776; <strong>DEVREF</strong></button>
+<div>
+    <a ng-repeat="link in links" href="./{{link.name | lowercase}}">
+        <div ng-bind="link.name"></div>
+    </a>
+</div>

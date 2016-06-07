@@ -1,0 +1,13 @@
+%flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%box-shadow {
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
