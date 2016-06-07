@@ -1,0 +1,74 @@
+<div class="jumbotron text-center">
+    <h1> <img style="height: 80px; width: 80px;" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"> Sass</h1>
+    <p>Sass gives CSS useful features.</p>
+    <p>The code is written in a scss file and then compiled to css.</p>
+    <p>The compiler runs from the terminal and requires Ruby.</p>
+    <a href="http://sass-lang.com/">Website</a> -
+    <a href="http://sassmeister.com/">Online Compiler Tool</a>
+</div>
+<div class="hidden-xs hidden-sm">
+    <div class="col-xs-12 col-sm-12 label-danger text-center"><h4>COMMAND-LINE OPTIONS</h4></div>
+    <div class="col-xs-12 col-sm-12 bg-primary">
+        <div class="col-xs-2 col-sm-2 thumb text-center">COMMAND</div>
+        <div class="col-xs-2 col-sm-2 thumb text-center">OPTIONS</div>
+        <div class="col-xs-3 col-sm-3 thumb text-center">DESCRIPTION</div>
+        <div class="col-xs-2 col-sm-2 thumb text-center">ARGUMENTS</div>
+        <div class="col-xs-3 col-sm-3 thumb text-center">DESCRIPTION</div>
+    </div>
+    <div class="col-xs-12 col-sm-12 square" ng-repeat='item in data.SassCLIArr'>
+        <div class="col-xs-2 col-sm-2 thumb text-center">
+            <span>sass</span>
+        </div>
+
+        <div class="col-xs-2 col-sm-2 thumb text-center">
+            <span>{{item.opt}}</span>
+        </div>
+
+        <div class="col-xs-3 col-sm-3 thumb text-center">
+            <ul>
+                <li>{{item.desc}}</li>
+            </ul>
+        </div>
+        <div class="col-xs-2 col-sm-2 thumb text-center">
+            <ul>
+                <li ng-repeat='arg in item.arg'>{{arg}}</li>
+            </ul>
+        </div>
+        <div class="col-xs-3 col-sm-3 thumb text-center">
+            <ul>
+                <li ng-repeat='argdesc in item.argdesc'>{{argdesc}}</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 label-danger text-center"><h4>TOPICS</h4></div>
+</div>
+
+<div class="col-xs-4 col-sm-4" ng-repeat="item in data.SassArr">
+    <div class="square">
+        <div class="content">
+            <div class="table text-center">
+                <h2>{{item.topic}}</h2>
+                <div class="hidden-xs">
+                    <span>{{item.desc}}</span>
+                    <hr>
+                    <code>{{item.syntax}}</code>
+                    <hr>
+                </div>
+                <div class="hidden-xs hidden-sm">
+
+                    <div class="col-xs-12 col-sm-12 bg-primary">
+                        <div class="col-xs-6 col-sm-6 thumb text-center">Example Code</div>
+                        <div class="col-xs-6 col-sm-6 thumb text-center">Compiled</div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12">
+                        <textarea rows="20" class="col-xs-6 col-sm-6 thumb text-left" contenteditable="true" ng-model="item.scss"></textarea>
+                        <textarea rows="20" class="col-xs-6 col-sm-6 thumb text-left" contenteditable="true" ng-model="item.result"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
