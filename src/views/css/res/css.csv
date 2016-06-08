@@ -1,0 +1,191 @@
+Property,Description,Shorthand,Animatable,CSS,Syntax,Type,Example
+color,Sets the text color,,yes,1,<color>,Color,"color: rgb(255,0,0);"
+opacity,Sets the element opacity,,yes,3,<alphavalue>,Color,opacity: 0.5;
+background,Sets various background properties (shorthand),X,some,1,"[<bg-image> || <bg-position> [ / <bg-size> ]? || <bg-repeat> || <bg-origin> || <bg-clip> || <bg-attachment> , ]* <background-layer (inluding background-color)>",Background,"background: url(image.png) 10px 5px / 10px 5px no-repeat content-box content-box scroll rgb(255,0,0);"
+background-image,Sets the background image(s) source,background,no,1,none | url(<url>) | <gradient> | element('#'<id>),Background,background-image: url(image.png);
+background-position,Sets background image(s) position,background,yes,1,left top | left center | left bottom | right top | right center | right bottom | center top | center center | center bottom | x% y% | xpos ypos,Background,background-position: 10px 5px;
+background-size,Sets the size of the background image(s),background,Animatable,3,"[ <length> | <percentage> | auto ]{1,2} | cover | contain",Background,background-size: 10px 5px;
+background-repeat,Sets the background image(s) repetition behavior,background,no,1,"repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}",Background,background-repeat: no-repeat;
+background-origin,Sets the area for background image(s) positioning,background,no,3,border-box | padding-box | content-box,Background,background-origin: content-box;
+background-clip,Sets the area for the background color,background,no,3,border-box | padding-box | content-box,Background,background-clip: content-box;
+background-attachment,Sets the background image scrolling behavior,background,no,1,scroll | fixed | local,Background,background-attachment: scroll;
+background-color,Sets the background color,background,yes,1,<color>,Background,"background-color: rgb(255,0,0);"
+background-blend-mode,Sets the blending mode for the background layers,,no,3,normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity,Background,background-blend-mode: overlay;
+border,Sets various properties for all borders (shorthand),X,some,1,<border-width> || <border-style> || <border-color>,Border,"border: 10px solid rgb(255,0,0);"
+border-width,Sets the border width,border,yes,1,"[ <length> | thin | medium | thick ]{1,4}",Border,border-width: 10px;
+border-style,Sets the border style,border,no,1,"[ none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ]{1,4}",Border,border-style: solid;
+border-color,Sets the border color,border,yes,1,"<color>{1,4}",Border,"border-color: rgb(255,0,0);"
+"border-top, border-right, border-bottom, border-right","Sets top, right, bottom, left border properties (shorthands)",X,some,1,<border-width> || <border-style> || <border-color>,Border,"border-top: 10px solid rgb(255,0,0);"
+"border-top-width, border-right-width, border-bottom-width, border-left-width","Sets top, right, bottom, left border width","border-top, border-right, border-bottom, border-right",yes,1,<length> | thin | medium | thick,Border,border-top-width: 10px;
+"border-top-style, border-right-style, border-bottom-style, border-left-style","Sets top, right, bottom, left border style","border-top, border-right, border-bottom, border-right",no,1,none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset,Border,border-top-style: solid;
+"border-top-color, border-right-color, border-bottom-color, border-left-color","Sets top, right, bottom, left border color","border-top, border-right, border-bottom, border-right",yes,1,<color>,Border,"border-top-color: rgb(255,0,0);"
+border-radius,Sets the border radius for all corners (shorthand),X,yes,3,"[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?",Border,border-radius: 10px 5px / 50% 30%;
+"border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius","Sets top-left, top-right, bottom-right, bottom-left border radius",border-radius,yes,3,"[ <length> | <percentage> ]{1,2}",Border,border-top-left-radius: 10px 5px;
+border-image,Sets various border image properties (shorthand),X,no,3,<border-image-source> || <border-image-slice> [ / <border-image-width> | / <border-image-width>? / <border-image-outset> ]? || <border-image-repeat>,Border,border-image: url(image.png) 10px 5px 50% 30% fill / 10px 5px 50% 30% / 10px 5px 2 1 round;
+border-image-source,Sets the border image source,border-image,no,3,none | <image>,Border,border-image-source: url(image.png);
+border-image-slice,Sets 9 border image slices through 4 offsets,border-image,no,3,"[<number> | <percentage>]{1,4} && fill?",Border,border-image-slice: 10px 5px 50% 30% fill;
+border-image-width,Sets the border image width,border-image,no,3,"[ <length> | <percentage> | <number> | auto ]{1,4}",Border,border-image-width: 10px 5px 50% 30%;
+border-image-outset,Sets border image offset beyond the border box,border-image,no,3,"[ <length> | <number> ]{1,4}",Border,border-image-outset: 10px 5px 2 1;
+border-image-repeat,Set the border image repeat behavior,border-image,no,3,"[ stretch | repeat | round ]{1,2}",Border,border-image-repeat: round;
+box-decoration-break,Sets the behaviour of the background and border at a fragmented page or line break,,no,3,slice | clone,Border,box-decoration-break: clone;
+box-shadow,Sets drop-shadow(s) to the box,,yes,3,"none | [ inset? && <length>{2,4} && <color>? ]#",Border,"box-shadow: inset 10px 5px 10px 5px rgb(255,0,0);"
+top,Sets top distance of a positioned element,,yes,2,<length> | <percentage> | auto,Box,top: 10px;
+right,Sets right distance of a positioned element,,yes,2,<length> | <percentage> | auto,Box,right: 10px;
+bottom,Sets bottom distance of a positioned element,,yes,2,<length> | <percentage> | auto,Box,bottom: 10px;
+left,Sets left distance of a positioned element,,yes,2,<length> | <percentage> | auto,Box,left: 10px;
+position,Sets the position of element,,no,2,static | relative | absolute | sticky | fixed,Box,position: fixed;
+display,Sets the display behavior of an element,,no,1,none | inline | block | list-item | inline-list-item | inline-block | inline-table | table | table-cell | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group | flex | inline-flex | grid | inline-grid | run-in | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | contents,Box,display: none;
+visibility,Sets the visibility of an element,,yes,2,visible | hidden | collapse,Box,visibility: hidden;
+z-index,Sets the stack level of a positioned element,,yes,2,auto | <integer>,Box,z-index: 1;
+margin,Sets all sides margin (shorthand),X,yes,1,"[ <length> | <percentage> | auto ]{1,4}",Box,margin: 10px;
+margin-top,Sets the top margin,margin,yes,1,<length> | <percentage> | auto,Box,margin-top: 10px;
+margin-right,Sets the right margin,margin,yes,1,<length> | <percentage> | auto,Box,margin-right: 10px;
+margin-bottom,Sets the bottom margin,margin,yes,1,<length> | <percentage> | auto,Box,margin-bottom: 10px;
+margin-left,Sets the left margin,margin,yes,1,<length> | <percentage> | auto,Box,margin-left: 10px;
+padding,Sets all sides padding (shorthand),X,yes,1,<length> | <percentage> | auto,Box,padding: 10px;
+padding-top,Sets the top padding,padding,yes,1,<length> | <percentage> | auto,Box,padding-top: 10px;
+padding-right,Sets the right padding,padding,yes,1,<length> | <percentage> | auto,Box,padding-right: 10px;
+padding-bottom,Sets the bottom padding,padding,yes,1,<length> | <percentage> | auto,Box,padding-bottom: 10px;
+padding-left,Sets the left padding,padding,yes,1,<length> | <percentage> | auto,Box,padding-left: 10px;
+height,Sets the height of the content area,,yes,1,[<length> | <percentage>] && [border-box | content-box]? | available | min-content | max-content | fit-content | auto,Box,height: 10px;
+max-height,Sets the maximum height of the content area,,yes,2,<length> | <percentage> | none | max-content | min-content | fit-content | fill-available,Box,max-height: 10px;
+min-height,Sets the minimum height of the content area,,yes,2,<length> | <percentage> | auto | max-content | min-content | fit-content | fill-available,Box,min-height: 10px;
+width,Sets the width of the content area,,yes,1,[<length> | <percentage>] && [border-box | content-box]? | available | min-content | max-content | fit-content | auto,Box,width: 10px;
+max-width,Sets the maximum width of the content area,,yes,2,<length> | <percentage> | none | max-content | min-content | fit-content | fill-available,Box,max-width: 10px;
+min-width,Sets the minimum width of the content area,,yes,2,<length> | <percentage> | none | max-content | min-content | fit-content | fill-available,Box,min-width: 10px;
+overflow,Sets behavior of overflowig content,X,no,2,visible | hidden | scroll | auto,Box,overflow: scroll;
+overflow-x,Sets behavior of horizontal overflowig content,overflow,no,3,visible | hidden | scroll | auto,Box,overflow-x: scroll;
+overflow-y,Sets behavior of vertical overflowig content,overflow,no,3,visible | hidden | scroll | auto,Box,overflow-y: scroll;
+float,Sets element out of normal flow allowing other elements to wrap around it,,no,1,left | right | none | inline-start | inline-end,Box,float: left;
+clear,Sets behaviour of element after a float element,,no,1,none | left | right | both | inline-start | inline-end,Box,clear: both;
+clip-path,Clips an element,,yes,2,<url> | [ <basic-shape> || [ [ [ border-box | padding-box | content-box ] | margin-box ] | fill-box | stroke-box | view-box ] ] | none,Box,"clip-path: rect(10px,10px,10px,10px);"
+vertical-align,Sets the vertical alignment of inline or table-cell box,,yes,1,baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length>,Box,vertical-align: middle;
+flex,Alters items dimensions to fill available space (shorthand),X,yes,3,none | [ <flex-grow> <flex-shrink>? || <flex-basis> ],Flexible Box,flex: 3 3 10px;
+flex-grow,Set grow size relative to items in flex container,flex,yes,3,<number>,Flexible Box,flex-grow: 3;
+flex-shrink,Set shrink size relative to items in flex container,flex,yes,3,<number>,Flexible Box,flex-shrink: 3;
+flex-basis,Sets the initial size of a flex item,flex,yes,3,content | <width>,Flexible Box,flex-basis: 10px;
+align-content,Aligns flex lines vertically inside a flexible container when there is space,,no,3,flex-start | flex-end | center | space-between | space-around | stretch,Flexible Box,align-content: center;
+align-items,Aligns items vertically inside a flex line when there is space,,no,3,flex-start | flex-end | center | baseline | stretch,Flexible Box,align-items: center;
+align-self,Aligns individual item vertically inside a flex line,,no,3,auto | flex-start | flex-end | center | baseline | stretch,Flexible Box,align-self: center;
+justify-content,Aligns items horizontally inside a flex line when there is space,,no,3,flex-start | flex-end | center | space-between | space-around,Flexible Box,justify-content: center;
+flex-flow,Sets direction and wrap properties (shorthand),X,no,3,<flex-direction> || <flex-wrap>,Flexible Box,flex-flow: row-reverse wrap;
+flex-direction,Sets the direction of flexible items,flex-flow,no,3,row | row-reverse | column | column-reverse,Flexible Box,flex-direction: row-reverse;
+flex-wrap,Sets single or multiple line wrap also allowing control of stacking order,flex-flow,no,3,nowrap | wrap | wrap-reverse,Flexible Box,flex-wrap: wrap;
+order,Sets the lay out order of flex items,,yes,3,<integer>,Flexible Box,order: 1;
+text-align,Sets the horizontal text alignment (shorthand),X,no,1,start | end | left | right | center | justify | match-parent | start end,Text,text-align: center;
+text-align-all,Sets the alignment of text-block except last line,text-align,no,3,start | end | left | right | center | justify | match-parent,Text,text-align-all: justify;
+text-align-last,Sets the alignment of last line of text-block,text-align,no,3,auto | start | end | left | right | center | justify,Text,text-align-last: justify;
+text-justify,Sets the behaviour of text-align: justify,,no,3,auto | inter-word | inter-ideograph | inter-cluster | distribute | kashida | trim,Text,text-justify: inter-word;
+letter-spacing,Sets space between characters,,yes,1,normal | <length>,Text,letter-spacing: 1em;
+word-spacing,Sets the space between words,,yes,1,normal | <length> | <percentage>,Text,word-spacing: 1em;
+white-space,Sets white space handling,,no,1,normal | pre | nowrap | pre-wrap | pre-line,Text,white-space: pre;
+text-transform,Sets the text capitalization,,no,1,none | capitalize | uppercase | lowercase | full-width,Text,text-transform: capitalize;
+text-indent,Sets the text first line indentation,,yes,1,<length> | <percentage> && [ hanging || each-line ],Text,text-indent: 1em;
+overflow-wrap/word-wrap,Sets the break for words on overflow,,no,3,normal | break-word,Text,overflow-wrap: break-word;
+tab-size,Sets the length of a tab,,no,3,<integer> | <length>,Text,tab-size: 1em;
+line-break,Sets the line break behaviour,,no,3,auto | loose | normal | strict,Text,line-break: normal;
+word-break,Sets the word break behaviour,,no,3,normal | break-all | keep-all,Text,word-break: break-all;
+hanging-punctuation,Sets placement of punctuation mark in/out inline element,,no,3,none | [ first || [ force-end | allow-end ] || last ],Text,hanging-punctuation: force-end;
+hyphens,Sets how to split words in paragraphs (depends on language),,no,3,none | manual (use &hyphen and &shy) | auto,Text,hyphens: manual;
+text-decoration,Line for text decoration,X,no,1,<text-decoration-line> || <text-decoration-style> || <text-decoration-color>,Text Decoration,
+text-decoration-color,Color of line,text-decoration,yes,3,<color>,Text Decoration,
+text-decoration-line,Line position,text-decoration,no,3,none | [ underline || overline || line-through || blink ],Text Decoration,
+text-decoration-style,Line type,text-decoration,no,3,solid | double | dotted | dashed | wavy,Text Decoration,
+text-shadow,Text shadow(s),,yes,3,"[ <length>{2,3} && <color>? ]# ((<offset-x> <offset-y>)R <blur-radius>O && <color>O)#",Text Decoration,
+text-underline-position,Vertical position for text-decoration: underline,,no,3,auto | [ under || [ left | right ] ],Text Decoration,
+@font-face { },"Download and use non ""web-safe"" fonts",,,3,{ font-family; || src; || unicode-range; || font-variant; || font-feature-settings; || font-stretch; || font-weight; || font-style; },Font,
+@font-feature-values { },Use OpenType features with font-variant-alternate,,,3,{ [ @swash | @ornaments | @annotation | @stylistic | @styleset | @character-variant { [ <IDENT>: <integer>+ ]? } ]? },Font,
+font,Font shorthand,X,some,1,[ [ <font-style> || <font-variant> || <font-weight> || <font-stretch> ]? <font-size> [ / <line-height> ]? <font-family> ] | caption | icon | menu | message-box | small-caption | status-bar,Font,
+font-size,Font size,font,yes,1,[ xx-small | s-small | small | medium | large | x-large | xx-large ] | [ larger | smaller ] | <length> | <percentage>,Font,
+line-height,Sets the line height,font,yes,1,normal | <number> | <length> | <percentage>,Text,line-height: 1em;
+font-family,Font family use priority,font,no,1,[ <family-name> | serif | sans-serif | cursive | fantasy | monospace ]#,Font,
+font-stretch,Select stretch type from font family,font,yes,3,normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded,Font,
+font-style,Font style,font,no,1,normal | italic | oblique,Font,
+font-weight,Font weight,font,yes,1,normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900,Font,
+font-variant,Font-variant shorthand,font,no,1,normal | none | <font-variant-ligatures> || <font-variant-alternates> || <font-variant-caps> || <font-variant-numeric> || <font-variant-east-asian> || <font-variant-position>,Font,
+font-variant-alternates,Enables glyphs in @font-feature-values,font-variant,no,3,normal | [ stylistic(IDENT) || historical-forms || styleset(IDENT#) || character-variant(IDENT#) || swash(IDENT) || ornaments(IDENT) || annotation(IDENT) ] ,Font,
+font-variant-caps,Enables glyphs for capital letters,font-variant,no,3,normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps,Font,font-variant-caps : small-caps;
+font-variant-east-asian,Enables glyphs for East Asian scripts,font-variant,no,3,normal | [ [ jis78 | jis83 | jis90 | jis04 | simplified | traditional ] || [ full-width | proportional-width ] || ruby ],Font,
+font-variant-ligatures,Enables font ligatures,font-variant,no,3,normal | none | [ [ common-ligatures | no-common-ligatures ] || [ discretionary-ligatures | no-discretionary-ligatures ] || [ historical-ligatures | no-historical-ligatures ] || [ contextual | no-contextual ] ],Font,
+font-variant-numeric,"Enables alternate glyphs for numbers, fractions, and ordinal markers",font-variant,no,3,normal | [ [ lining-nums | oldstyle-nums ] || [ proportional-nums | tabular-nums ] || [ diagonal-fractions | stacked-fractions ] || ordinal || slashed-zero ],Font,font-variant-numeric: lining-nums tabular-nums diagonal-fractions ordinal slashed-zero;
+font-variant-position,Enables glyphs for superscript and subscript,font-variant,no,3,normal | sub | super,Font,
+font-feature-settings,Enables OpenType features (font-variant alternative),,no,3,normal | [<string> [ <integer> | on | off ]? ]#,Font,"font-feature-settings: ""smcp"", ""swsh"" 2"
+font-kerning,Use font kerning information,,no,3,auto | normal | none,Font,
+font-language-override,Use language-specific glyphs in a typeface,,no,3,normal | <language>,Font,
+font-size-adjust,Lowercase ratio to preserve readability,,yes,3,none | <number>,Font,
+font-synthesis,Browser synthesizes weight and style of missing typefaces,,no,3,none | [ weight || style ],Font,
+direction,Text direction,,no,2,ltr | rtl,Writing Modes,
+text-orientation,Vertical text orientation,,no,3,mixed | upright | sideways,Writing Modes,
+text-combine-upright,Vertical text,,no,3,none | all | [ digits <integer>? ],Text,
+unicode-bidi,Used with direction for multiple languages,,no,2,normal | embed | isolate | bidi-override | isolate-override | plaintext,Writing Modes,
+writing-mode,Vertical or horizontal text,,no,3,horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr,Writing Modes,
+border-collapse,Table borders collapse,,no,2,collapse | separate,Table,
+border-spacing,Table borders spacing,,no,2,<length> <length>?,Table,
+caption-side,Placement of table caption,,no,2,top | bottom | block-start | block-end | inline-start | inline-end,Table,
+empty-cells,Borders and background display on empty cells in table,,no,2,show | hide,Table,
+table-layout,Table layout algorithm,,no,2,auto | fixed,Table,
+counter-increment,Increments counter(s),,no,2,[<user-ident> <integer>?]+ | none,Lists and Counters,
+counter-reset,Creates or resets counter(s),,no,2,[<user-ident> <integer>?]+ | none,Lists and Counters,
+list-style,List style shorthand,,no,1,<list-style-type> || <list-style-position> || <list-style-image>,Lists and Counters,
+list-style-image,List marker image,,no,1,url(URL) | none,Lists and Counters,
+list-style-position,List marker position,,no,1,inside | outside,Lists and Counters,
+list-style-type,List marker type,,no,1,[ <custom-ident> | symbols() ] | <string> | none,Lists and Counters,
+@keyframes,Animation code,,,3,"@keyframes <name> { [ [ from | to | <percentage> ] [, from | to | <percentage> ]* block ]* }",Animation,@keyframes fade-out {from {opacity:1;} to {opacity:0;}}
+animation,Sets animation properties (shorthand),X,no,3,<animation-name> || <animation-duration> || <animation-timing-function> || <animation-delay> || <animation-iteration-count> || <animation-direction> || <animation-fill-mode> || <animation-play-state>,Animation,animation: fade-out 3s ease 3s 3 alternate both running;
+animation-name,Sets animation name,animation,no,3,[ none | IDENT ]#,Animation,animation-name: fade-out;
+animation-duration,Sets animation cycle duration,animation,no,3,<time>#,Animation,animation-duration: 3s;
+animation-timing-function,Sets animation speed curve,animation,no,3,"[ cubic-bezier(x1, y1, x2, y2) | steps(<integer steps number>, [ start | end ]?) | linear | ease | ease-in | ease-in-out | ease-out | step-start | step-end ]#",Animation,animation-timing-function: ease;
+animation-delay,Sets delay before animation,animation,no,3,<time>#,Animation,animation-delay: 3s;
+animation-iteration-count,Sets times to play animation,animation,no,3,[ infinite | <number> ]#,Animation,animation-iteration-count: 3;
+animation-direction,Sets animation direction,animation,no,3,[ normal | reverse | alternate | alternate-reverse ]#,Animation,animation-direction: alternate;
+animation-fill-mode,Sets style when animation is not excecuting,animation,no,3,[ none | forwards | backwards | both ]#,Animation,animation-fill-mode: both;
+animation-play-state,Sets animation play or pause behaviour,animation,no,3,[ running | paused ]#,Animation,animation-play-state: running;
+backface-visibility,Back face visibility of 3D element,,no,3,visible | hidden,Transform,
+perspective,Distance of z plane from viewer,,yes,3,none | <length>,Transform,
+perspective-origin,Postion of viewer (Vanishing point for perspective),,yes,3,[ <percentage> | <length> | left | center | right | top | bottom] | [ [ <percentage> | <length> | left | center | right ] && [ <percentage> | <length> | top | center | bottom ] ],Transform,
+transform,2D or 3D transformation,,yes,3,"none | [ [matrix(<number> [, <number> ]{5,5}) || matrix3d(<number> [, <number> ]{15,15}) || translate(<length> | <percentage> [, <length> | <percentage> ]?) || translateX(<length> | <percentage>) || translateY(<length> | <percentage>) || translate3d(<length> | <percentage> , <length> | <percentage> , <length>) || translateZ(<length> | <percentage>) || scale(<number> [, <number> ]?> || scaleX(<number>) || scaleY(<number>) || scale3d(<number> , <number>, <number>) || scaleZ(<number>) || rotate(<angle>) || rotateX(<angle>) || rotateY(<angle>) || rotate3d(<number> , <number> , <number> , <angle>) || rotateZ(<angle>) || skew(<angle> [, <angle> ]) || skewX(<angle>) || skewY(<angle>) || perspective(<length>)]+ ]+",Transform,
+transform-origin,Position of transformed elements,,yes,3,[ <percentage> | <length> | left | center | right | top | bottom] | [ [ <percentage> | <length> | left | center | right ] && [ <percentage> | <length> | top | center | bottom ] ] <length>?,Transform,
+transform-style,How 3D nested elements render,,no,3,flat | preserve-3d,Transform,
+transition,Transition shorthand,X,no,3,[ <transition-property> || <transition-duration> || <transition-timing-function> || <transition-delay> ]#,Transition,
+transition-property,Sets the transition property name,transition,no,3,[ none | all | IDENT ]#,Transition,transition-property: color;
+transition-duration,Transition duration,transition,no,3,<time>#,Transition,
+transition-timing-function,Transition speed curve,transition,no,3,"[ cubic-bezier(x1, y1, x2, y2) | steps(<integer steps number>, [ start | end ]?) | linear | ease | ease-in | ease-in-out | ease-out | step-start | step-end ]#",Transition,
+transition-delay,Transition delay,transition,no,3,<time>#,Transition,
+box-sizing,What width and height include,,no,3,content-box | border-box,User Interface,
+content,Insert content in :before and :after,,no,2,normal | none | [ <string> | url(<url>) | <counter> | attr() | open-quote | close-quote | no-open-quote | no-close-quote ]+,User Interface,
+cursor,Cursor type,,no,2,"[ [ url(<url>)  [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ]",User Interface,
+ime-mode (obsolete),Input method editor state for text fields,,no,3,auto | normal | active | inactive | disabled,User Interface,
+outline,Outline shorthand (border that dont space),,some,2,<outline-color> || <outline-style> || <outline-width>,User Interface,
+outline-color,Outline color,outline,yes,2,<color> | invert,User Interface,
+outline-style,Outline style,outline,no,2,auto | [ none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ],User Interface,
+outline-width,Outline width,outline,yes,2,<length> | thin | medium | thick,User Interface,
+outline-offset,Outline offset,,yes,3,<length>,User Interface,
+resize,Ability to resize element,,no,3,none | both | horizontal | vertical,User Interface,
+text-overflow,Action on text overflow,,no,3,"[ clip | ellipsis | <string> ]{1,2}",User Interface,
+break-after (unsupported),"page-, column-, or region-break behavior after generated box",,no,3,auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region,Multi-column Layout,
+break-before (unsupported),"page-, column-, or region-break behavior before generated box",,no,3,auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region,Multi-column Layout,
+break-inside (unsupported),"page-, column-, or region-break behavior inside generated box",,no,3,auto | avoid | avoid-page | avoid-column | avoid-region,Multi-column Layout,
+columns,Column shorthand,X,yes,3,<column-width> || <column-count>,Multi-column Layout,
+column-count,Element columns number,columns,yes,3,<number> | auto,Multi-column Layout,
+column-width,Element columns width,columns,yes,3,<length> | auto,Multi-column Layout,
+column-fill,Columns fill behavior,,no,3,auto | balance,Multi-column Layout,
+column-gap,Gap between columns,,yes,3,<length> | normal,Multi-column Layout,
+column-rule,Column rule shorthand,X,some,3,<column-rule-width> || <column-rule-style> || <column-rule-color>,Multi-column Layout,
+column-rule-color,Color of rule between columns,column-rule,yes,3,<color>,Multi-column Layout,
+column-rule-style,Styles the rule (line) between columns,column-rule,no,3,none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset,Multi-column Layout,column-rule-style: solid;
+column-rule-width,Width of rule between columns,column-rule,yes,3,<length> | thin | medium | thick,Multi-column Layout,
+column-span,Columns number an element can span across,,no,3,none | all,Multi-column Layout,
+orphans,Sets the minimum number of lines that must be left at the bottom of a page when a page break occurs inside an element,,,2,,Paged Media,
+page-break-after,Sets the page-breaking behavior after an element,,,2,,Paged Media,
+page-break-before,Sets the page-breaking behavior before an element,,,2,,Paged Media,
+page-break-inside,Sets the page-breaking behavior inside an element,,,2,,Paged Media,
+marks,Adds crop and/or cross marks to the document,,,3,,Generated Content for Paged Media,
+quotes,Sets the type of quotation marks for embedded quotations,,,2,,Generated Content for Paged Media,
+filter,Element effects,,yes,3,"none | [ blur( <length> ) | brightness( [ <number> | <percentage> ] ) | contrast( [ <number> | <percentage> ] ) | drop-shadow( <length>{2,3} <color>? ) | grayscale( [ <number> | <percentage> ] ) | hue-rotate( <angle> ) | invert( [ <number> | <percentage> ] ) | opacity( [ <number> | <percentage> ] ) | sepia( [ <number> | <percentage> ] ) | saturate( [ <number> | <percentage> ] ) | url(svg-url#element-id)  ]+",Filter Effects,
+image-orientation,Correct image rotation,,no,3,from-image | <angle> | [<angle>? flip],Image Values and Replaced Content,
+image-rendering,Scaled image rendering algorithm,,no,3,auto | crisp-edges | pixelated,Image Values and Replaced Content,
+image-resolution,Image resolution for raster,,no,3,[from-image || <resolution>] && snap?,Image Values and Replaced Content,
+object-fit,Options to fit content in box with width and height,,no,3,fill | contain | cover | none | scale-down,Image Values and Replaced Content,
+object-position,Alignment of element inside box,,yes,3,<position>,Image Values and Replaced Content,
+mask,Partial hiding of item,X,some,3,"[ none | <image> | url(<url>) ] [ alpha | luminance | auto ]? || <position> [ / [ [ <length> | <percentage> | auto ]{1,2} | cover | contain ] ]? || [ repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} ] || [ <shape-box> | fill-box | stroke-box | view-box ] || [ [ [ [ border-box | padding-box | content-box ] | margin-box ] | fill-box | stroke-box | view-box ] | no-clip ] || [ add | subtract | intersect | exclude ]",Masking,
+mask-type,Properties for SVG <mask>,,no,3,luminance | alpha,Masking,

@@ -1,0 +1,72 @@
+@import '../colors';
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 15px;
+    &.sm {
+        width: 10px;
+        height: 10px;
+    }
+    &.md {
+        width: 20px;
+        height: 20px;
+    }
+    &.lg {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+#section-css {
+    .legend {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        background: $paper;
+    }
+    table {
+        text-align: left;
+        font-size: 0.8em;
+        width: 100%;
+        td {
+            padding: 5px;
+            height: 30px; //prevents circle from overflowing
+            position: relative;
+        }
+        .circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    thead {
+        background: $black;
+        color: $white;
+        th {
+            padding: 10px;
+        }
+    }
+}
+
+.green {
+    background: $green;
+}
+
+.yellow {
+    background: $yellow;
+}
+
+.red {
+    background: $red;
+}
+
+.purple {
+    background: $purple;
+}
+
+.black {
+    background: $black;
+}

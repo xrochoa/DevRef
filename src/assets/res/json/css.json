@@ -1,0 +1,1902 @@
+[
+  {
+    "Property": "color",
+    "Description": "Sets the text color",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<color>",
+    "Type": "Color",
+    "Example": "color: rgb(255,0,0);"
+  },
+  {
+    "Property": "opacity",
+    "Description": "Sets the element opacity",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<alphavalue>",
+    "Type": "Color",
+    "Example": "opacity: 0.5;"
+  },
+  {
+    "Property": "background",
+    "Description": "Sets various background properties (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 1,
+    "Syntax": "[<bg-image> || <bg-position> [ / <bg-size> ]? || <bg-repeat> || <bg-origin> || <bg-clip> || <bg-attachment> , ]* <background-layer (inluding background-color)>",
+    "Type": "Background",
+    "Example": "background: url(image.png) 10px 5px / 10px 5px no-repeat content-box content-box scroll rgb(255,0,0);"
+  },
+  {
+    "Property": "background-image",
+    "Description": "Sets the background image(s) source",
+    "Shorthand": "background",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "none | url(<url>) | <gradient> | element('#'<id>)",
+    "Type": "Background",
+    "Example": "background-image: url(image.png);"
+  },
+  {
+    "Property": "background-position",
+    "Description": "Sets background image(s) position",
+    "Shorthand": "background",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "left top | left center | left bottom | right top | right center | right bottom | center top | center center | center bottom | x% y% | xpos ypos",
+    "Type": "Background",
+    "Example": "background-position: 10px 5px;"
+  },
+  {
+    "Property": "background-size",
+    "Description": "Sets the size of the background image(s)",
+    "Shorthand": "background",
+    "Animatable": "Animatable",
+    "CSS": 3,
+    "Syntax": "[ <length> | <percentage> | auto ]{1,2} | cover | contain",
+    "Type": "Background",
+    "Example": "background-size: 10px 5px;"
+  },
+  {
+    "Property": "background-repeat",
+    "Description": "Sets the background image(s) repetition behavior",
+    "Shorthand": "background",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2}",
+    "Type": "Background",
+    "Example": "background-repeat: no-repeat;"
+  },
+  {
+    "Property": "background-origin",
+    "Description": "Sets the area for background image(s) positioning",
+    "Shorthand": "background",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "border-box | padding-box | content-box",
+    "Type": "Background",
+    "Example": "background-origin: content-box;"
+  },
+  {
+    "Property": "background-clip",
+    "Description": "Sets the area for the background color",
+    "Shorthand": "background",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "border-box | padding-box | content-box",
+    "Type": "Background",
+    "Example": "background-clip: content-box;"
+  },
+  {
+    "Property": "background-attachment",
+    "Description": "Sets the background image scrolling behavior",
+    "Shorthand": "background",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "scroll | fixed | local",
+    "Type": "Background",
+    "Example": "background-attachment: scroll;"
+  },
+  {
+    "Property": "background-color",
+    "Description": "Sets the background color",
+    "Shorthand": "background",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<color>",
+    "Type": "Background",
+    "Example": "background-color: rgb(255,0,0);"
+  },
+  {
+    "Property": "background-blend-mode",
+    "Description": "Sets the blending mode for the background layers",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity",
+    "Type": "Background",
+    "Example": "background-blend-mode: overlay;"
+  },
+  {
+    "Property": "border",
+    "Description": "Sets various properties for all borders (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 1,
+    "Syntax": "<border-width> || <border-style> || <border-color>",
+    "Type": "Border",
+    "Example": "border: 10px solid rgb(255,0,0);"
+  },
+  {
+    "Property": "border-width",
+    "Description": "Sets the border width",
+    "Shorthand": "border",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "[ <length> | thin | medium | thick ]{1,4}",
+    "Type": "Border",
+    "Example": "border-width: 10px;"
+  },
+  {
+    "Property": "border-style",
+    "Description": "Sets the border style",
+    "Shorthand": "border",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "[ none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ]{1,4}",
+    "Type": "Border",
+    "Example": "border-style: solid;"
+  },
+  {
+    "Property": "border-color",
+    "Description": "Sets the border color",
+    "Shorthand": "border",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<color>{1,4}",
+    "Type": "Border",
+    "Example": "border-color: rgb(255,0,0);"
+  },
+  {
+    "Property": "border-top, border-right, border-bottom, border-right",
+    "Description": "Sets top, right, bottom, left border properties (shorthands)",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 1,
+    "Syntax": "<border-width> || <border-style> || <border-color>",
+    "Type": "Border",
+    "Example": "border-top: 10px solid rgb(255,0,0);"
+  },
+  {
+    "Property": "border-top-width, border-right-width, border-bottom-width, border-left-width",
+    "Description": "Sets top, right, bottom, left border width",
+    "Shorthand": "border-top, border-right, border-bottom, border-right",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | thin | medium | thick",
+    "Type": "Border",
+    "Example": "border-top-width: 10px;"
+  },
+  {
+    "Property": "border-top-style, border-right-style, border-bottom-style, border-left-style",
+    "Description": "Sets top, right, bottom, left border style",
+    "Shorthand": "border-top, border-right, border-bottom, border-right",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
+    "Type": "Border",
+    "Example": "border-top-style: solid;"
+  },
+  {
+    "Property": "border-top-color, border-right-color, border-bottom-color, border-left-color",
+    "Description": "Sets top, right, bottom, left border color",
+    "Shorthand": "border-top, border-right, border-bottom, border-right",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<color>",
+    "Type": "Border",
+    "Example": "border-top-color: rgb(255,0,0);"
+  },
+  {
+    "Property": "border-radius",
+    "Description": "Sets the border radius for all corners (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "[ <length> | <percentage> ]{1,4} [ / [ <length> | <percentage> ]{1,4} ]?",
+    "Type": "Border",
+    "Example": "border-radius: 10px 5px / 50% 30%;"
+  },
+  {
+    "Property": "border-top-left-radius, border-top-right-radius, border-bottom-right-radius, border-bottom-left-radius",
+    "Description": "Sets top-left, top-right, bottom-right, bottom-left border radius",
+    "Shorthand": "border-radius",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "[ <length> | <percentage> ]{1,2}",
+    "Type": "Border",
+    "Example": "border-top-left-radius: 10px 5px;"
+  },
+  {
+    "Property": "border-image",
+    "Description": "Sets various border image properties (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<border-image-source> || <border-image-slice> [ / <border-image-width> | / <border-image-width>? / <border-image-outset> ]? || <border-image-repeat>",
+    "Type": "Border",
+    "Example": "border-image: url(image.png) 10px 5px 50% 30% fill / 10px 5px 50% 30% / 10px 5px 2 1 round;"
+  },
+  {
+    "Property": "border-image-source",
+    "Description": "Sets the border image source",
+    "Shorthand": "border-image",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | <image>",
+    "Type": "Border",
+    "Example": "border-image-source: url(image.png);"
+  },
+  {
+    "Property": "border-image-slice",
+    "Description": "Sets 9 border image slices through 4 offsets",
+    "Shorthand": "border-image",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[<number> | <percentage>]{1,4} && fill?",
+    "Type": "Border",
+    "Example": "border-image-slice: 10px 5px 50% 30% fill;"
+  },
+  {
+    "Property": "border-image-width",
+    "Description": "Sets the border image width",
+    "Shorthand": "border-image",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ <length> | <percentage> | <number> | auto ]{1,4}",
+    "Type": "Border",
+    "Example": "border-image-width: 10px 5px 50% 30%;"
+  },
+  {
+    "Property": "border-image-outset",
+    "Description": "Sets border image offset beyond the border box",
+    "Shorthand": "border-image",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ <length> | <number> ]{1,4}",
+    "Type": "Border",
+    "Example": "border-image-outset: 10px 5px 2 1;"
+  },
+  {
+    "Property": "border-image-repeat",
+    "Description": "Set the border image repeat behavior",
+    "Shorthand": "border-image",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ stretch | repeat | round ]{1,2}",
+    "Type": "Border",
+    "Example": "border-image-repeat: round;"
+  },
+  {
+    "Property": "box-decoration-break",
+    "Description": "Sets the behaviour of the background and border at a fragmented page or line break",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "slice | clone",
+    "Type": "Border",
+    "Example": "box-decoration-break: clone;"
+  },
+  {
+    "Property": "box-shadow",
+    "Description": "Sets drop-shadow(s) to the box",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | [ inset? && <length>{2,4} && <color>? ]#",
+    "Type": "Border",
+    "Example": "box-shadow: inset 10px 5px 10px 5px rgb(255,0,0);"
+  },
+  {
+    "Property": "top",
+    "Description": "Sets top distance of a positioned element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "top: 10px;"
+  },
+  {
+    "Property": "right",
+    "Description": "Sets right distance of a positioned element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "right: 10px;"
+  },
+  {
+    "Property": "bottom",
+    "Description": "Sets bottom distance of a positioned element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "bottom: 10px;"
+  },
+  {
+    "Property": "left",
+    "Description": "Sets left distance of a positioned element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "left: 10px;"
+  },
+  {
+    "Property": "position",
+    "Description": "Sets the position of element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "static | relative | absolute | sticky | fixed",
+    "Type": "Box",
+    "Example": "position: fixed;"
+  },
+  {
+    "Property": "display",
+    "Description": "Sets the display behavior of an element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "none | inline | block | list-item | inline-list-item | inline-block | inline-table | table | table-cell | table-column | table-column-group | table-footer-group | table-header-group | table-row | table-row-group | flex | inline-flex | grid | inline-grid | run-in | ruby | ruby-base | ruby-text | ruby-base-container | ruby-text-container | contents",
+    "Type": "Box",
+    "Example": "display: none;"
+  },
+  {
+    "Property": "visibility",
+    "Description": "Sets the visibility of an element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "visible | hidden | collapse",
+    "Type": "Box",
+    "Example": "visibility: hidden;"
+  },
+  {
+    "Property": "z-index",
+    "Description": "Sets the stack level of a positioned element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "auto | <integer>",
+    "Type": "Box",
+    "Example": "z-index: 1;"
+  },
+  {
+    "Property": "margin",
+    "Description": "Sets all sides margin (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "[ <length> | <percentage> | auto ]{1,4}",
+    "Type": "Box",
+    "Example": "margin: 10px;"
+  },
+  {
+    "Property": "margin-top",
+    "Description": "Sets the top margin",
+    "Shorthand": "margin",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "margin-top: 10px;"
+  },
+  {
+    "Property": "margin-right",
+    "Description": "Sets the right margin",
+    "Shorthand": "margin",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "margin-right: 10px;"
+  },
+  {
+    "Property": "margin-bottom",
+    "Description": "Sets the bottom margin",
+    "Shorthand": "margin",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "margin-bottom: 10px;"
+  },
+  {
+    "Property": "margin-left",
+    "Description": "Sets the left margin",
+    "Shorthand": "margin",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "margin-left: 10px;"
+  },
+  {
+    "Property": "padding",
+    "Description": "Sets all sides padding (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "padding: 10px;"
+  },
+  {
+    "Property": "padding-top",
+    "Description": "Sets the top padding",
+    "Shorthand": "padding",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "padding-top: 10px;"
+  },
+  {
+    "Property": "padding-right",
+    "Description": "Sets the right padding",
+    "Shorthand": "padding",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "padding-right: 10px;"
+  },
+  {
+    "Property": "padding-bottom",
+    "Description": "Sets the bottom padding",
+    "Shorthand": "padding",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "padding-bottom: 10px;"
+  },
+  {
+    "Property": "padding-left",
+    "Description": "Sets the left padding",
+    "Shorthand": "padding",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> | auto",
+    "Type": "Box",
+    "Example": "padding-left: 10px;"
+  },
+  {
+    "Property": "height",
+    "Description": "Sets the height of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "[<length> | <percentage>] && [border-box | content-box]? | available | min-content | max-content | fit-content | auto",
+    "Type": "Box",
+    "Example": "height: 10px;"
+  },
+  {
+    "Property": "max-height",
+    "Description": "Sets the maximum height of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | none | max-content | min-content | fit-content | fill-available",
+    "Type": "Box",
+    "Example": "max-height: 10px;"
+  },
+  {
+    "Property": "min-height",
+    "Description": "Sets the minimum height of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | auto | max-content | min-content | fit-content | fill-available",
+    "Type": "Box",
+    "Example": "min-height: 10px;"
+  },
+  {
+    "Property": "width",
+    "Description": "Sets the width of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "[<length> | <percentage>] && [border-box | content-box]? | available | min-content | max-content | fit-content | auto",
+    "Type": "Box",
+    "Example": "width: 10px;"
+  },
+  {
+    "Property": "max-width",
+    "Description": "Sets the maximum width of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | none | max-content | min-content | fit-content | fill-available",
+    "Type": "Box",
+    "Example": "max-width: 10px;"
+  },
+  {
+    "Property": "min-width",
+    "Description": "Sets the minimum width of the content area",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | <percentage> | none | max-content | min-content | fit-content | fill-available",
+    "Type": "Box",
+    "Example": "min-width: 10px;"
+  },
+  {
+    "Property": "overflow",
+    "Description": "Sets behavior of overflowig content",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "visible | hidden | scroll | auto",
+    "Type": "Box",
+    "Example": "overflow: scroll;"
+  },
+  {
+    "Property": "overflow-x",
+    "Description": "Sets behavior of horizontal overflowig content",
+    "Shorthand": "overflow",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "visible | hidden | scroll | auto",
+    "Type": "Box",
+    "Example": "overflow-x: scroll;"
+  },
+  {
+    "Property": "overflow-y",
+    "Description": "Sets behavior of vertical overflowig content",
+    "Shorthand": "overflow",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "visible | hidden | scroll | auto",
+    "Type": "Box",
+    "Example": "overflow-y: scroll;"
+  },
+  {
+    "Property": "float",
+    "Description": "Sets element out of normal flow allowing other elements to wrap around it",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "left | right | none | inline-start | inline-end",
+    "Type": "Box",
+    "Example": "float: left;"
+  },
+  {
+    "Property": "clear",
+    "Description": "Sets behaviour of element after a float element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "none | left | right | both | inline-start | inline-end",
+    "Type": "Box",
+    "Example": "clear: both;"
+  },
+  {
+    "Property": "clip-path",
+    "Description": "Clips an element",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<url> | [ <basic-shape> || [ [ [ border-box | padding-box | content-box ] | margin-box ] | fill-box | stroke-box | view-box ] ] | none",
+    "Type": "Box",
+    "Example": "clip-path: rect(10px,10px,10px,10px);"
+  },
+  {
+    "Property": "vertical-align",
+    "Description": "Sets the vertical alignment of inline or table-cell box",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "baseline | sub | super | top | text-top | middle | bottom | text-bottom | <percentage> | <length>",
+    "Type": "Box",
+    "Example": "vertical-align: middle;"
+  },
+  {
+    "Property": "flex",
+    "Description": "Alters items dimensions to fill available space (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | [ <flex-grow> <flex-shrink>? || <flex-basis> ]",
+    "Type": "Flexible Box",
+    "Example": "flex: 3 3 10px;"
+  },
+  {
+    "Property": "flex-grow",
+    "Description": "Set grow size relative to items in flex container",
+    "Shorthand": "flex",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<number>",
+    "Type": "Flexible Box",
+    "Example": "flex-grow: 3;"
+  },
+  {
+    "Property": "flex-shrink",
+    "Description": "Set shrink size relative to items in flex container",
+    "Shorthand": "flex",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<number>",
+    "Type": "Flexible Box",
+    "Example": "flex-shrink: 3;"
+  },
+  {
+    "Property": "flex-basis",
+    "Description": "Sets the initial size of a flex item",
+    "Shorthand": "flex",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "content | <width>",
+    "Type": "Flexible Box",
+    "Example": "flex-basis: 10px;"
+  },
+  {
+    "Property": "align-content",
+    "Description": "Aligns flex lines vertically inside a flexible container when there is space",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "flex-start | flex-end | center | space-between | space-around | stretch",
+    "Type": "Flexible Box",
+    "Example": "align-content: center;"
+  },
+  {
+    "Property": "align-items",
+    "Description": "Aligns items vertically inside a flex line when there is space",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "flex-start | flex-end | center | baseline | stretch",
+    "Type": "Flexible Box",
+    "Example": "align-items: center;"
+  },
+  {
+    "Property": "align-self",
+    "Description": "Aligns individual item vertically inside a flex line",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | flex-start | flex-end | center | baseline | stretch",
+    "Type": "Flexible Box",
+    "Example": "align-self: center;"
+  },
+  {
+    "Property": "justify-content",
+    "Description": "Aligns items horizontally inside a flex line when there is space",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "flex-start | flex-end | center | space-between | space-around",
+    "Type": "Flexible Box",
+    "Example": "justify-content: center;"
+  },
+  {
+    "Property": "flex-flow",
+    "Description": "Sets direction and wrap properties (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<flex-direction> || <flex-wrap>",
+    "Type": "Flexible Box",
+    "Example": "flex-flow: row-reverse wrap;"
+  },
+  {
+    "Property": "flex-direction",
+    "Description": "Sets the direction of flexible items",
+    "Shorthand": "flex-flow",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "row | row-reverse | column | column-reverse",
+    "Type": "Flexible Box",
+    "Example": "flex-direction: row-reverse;"
+  },
+  {
+    "Property": "flex-wrap",
+    "Description": "Sets single or multiple line wrap also allowing control of stacking order",
+    "Shorthand": "flex-flow",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "nowrap | wrap | wrap-reverse",
+    "Type": "Flexible Box",
+    "Example": "flex-wrap: wrap;"
+  },
+  {
+    "Property": "order",
+    "Description": "Sets the lay out order of flex items",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<integer>",
+    "Type": "Flexible Box",
+    "Example": "order: 1;"
+  },
+  {
+    "Property": "text-align",
+    "Description": "Sets the horizontal text alignment (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "start | end | left | right | center | justify | match-parent | start end",
+    "Type": "Text",
+    "Example": "text-align: center;"
+  },
+  {
+    "Property": "text-align-all",
+    "Description": "Sets the alignment of text-block except last line",
+    "Shorthand": "text-align",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "start | end | left | right | center | justify | match-parent",
+    "Type": "Text",
+    "Example": "text-align-all: justify;"
+  },
+  {
+    "Property": "text-align-last",
+    "Description": "Sets the alignment of last line of text-block",
+    "Shorthand": "text-align",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | start | end | left | right | center | justify",
+    "Type": "Text",
+    "Example": "text-align-last: justify;"
+  },
+  {
+    "Property": "text-justify",
+    "Description": "Sets the behaviour of text-align: justify",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | inter-word | inter-ideograph | inter-cluster | distribute | kashida | trim",
+    "Type": "Text",
+    "Example": "text-justify: inter-word;"
+  },
+  {
+    "Property": "letter-spacing",
+    "Description": "Sets space between characters",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "normal | <length>",
+    "Type": "Text",
+    "Example": "letter-spacing: 1em;"
+  },
+  {
+    "Property": "word-spacing",
+    "Description": "Sets the space between words",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "normal | <length> | <percentage>",
+    "Type": "Text",
+    "Example": "word-spacing: 1em;"
+  },
+  {
+    "Property": "white-space",
+    "Description": "Sets white space handling",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "normal | pre | nowrap | pre-wrap | pre-line",
+    "Type": "Text",
+    "Example": "white-space: pre;"
+  },
+  {
+    "Property": "text-transform",
+    "Description": "Sets the text capitalization",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "none | capitalize | uppercase | lowercase | full-width",
+    "Type": "Text",
+    "Example": "text-transform: capitalize;"
+  },
+  {
+    "Property": "text-indent",
+    "Description": "Sets the text first line indentation",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "<length> | <percentage> && [ hanging || each-line ]",
+    "Type": "Text",
+    "Example": "text-indent: 1em;"
+  },
+  {
+    "Property": "overflow-wrap/word-wrap",
+    "Description": "Sets the break for words on overflow",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | break-word",
+    "Type": "Text",
+    "Example": "overflow-wrap: break-word;"
+  },
+  {
+    "Property": "tab-size",
+    "Description": "Sets the length of a tab",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<integer> | <length>",
+    "Type": "Text",
+    "Example": "tab-size: 1em;"
+  },
+  {
+    "Property": "line-break",
+    "Description": "Sets the line break behaviour",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | loose | normal | strict",
+    "Type": "Text",
+    "Example": "line-break: normal;"
+  },
+  {
+    "Property": "word-break",
+    "Description": "Sets the word break behaviour",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | break-all | keep-all",
+    "Type": "Text",
+    "Example": "word-break: break-all;"
+  },
+  {
+    "Property": "hanging-punctuation",
+    "Description": "Sets placement of punctuation mark in/out inline element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | [ first || [ force-end | allow-end ] || last ]",
+    "Type": "Text",
+    "Example": "hanging-punctuation: force-end;"
+  },
+  {
+    "Property": "hyphens",
+    "Description": "Sets how to split words in paragraphs (depends on language)",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | manual (use &hyphen and &shy) | auto",
+    "Type": "Text",
+    "Example": "hyphens: manual;"
+  },
+  {
+    "Property": "text-decoration",
+    "Description": "Line for text decoration",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "<text-decoration-line> || <text-decoration-style> || <text-decoration-color>",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "text-decoration-color",
+    "Description": "Color of line",
+    "Shorthand": "text-decoration",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<color>",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "text-decoration-line",
+    "Description": "Line position",
+    "Shorthand": "text-decoration",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | [ underline || overline || line-through || blink ]",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "text-decoration-style",
+    "Description": "Line type",
+    "Shorthand": "text-decoration",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "solid | double | dotted | dashed | wavy",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "text-shadow",
+    "Description": "Text shadow(s)",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "[ <length>{2,3} && <color>? ]# ((<offset-x> <offset-y>)R <blur-radius>O && <color>O)#",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "text-underline-position",
+    "Description": "Vertical position for text-decoration: underline",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | [ under || [ left | right ] ]",
+    "Type": "Text Decoration",
+    "Example": 0
+  },
+  {
+    "Property": "@font-face { }",
+    "Description": "Download and use non \"web-safe\" fonts",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 3,
+    "Syntax": "{ font-family; || src; || unicode-range; || font-variant; || font-feature-settings; || font-stretch; || font-weight; || font-style; }",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "@font-feature-values { }",
+    "Description": "Use OpenType features with font-variant-alternate",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 3,
+    "Syntax": "{ [ @swash | @ornaments | @annotation | @stylistic | @styleset | @character-variant { [ <IDENT>: <integer>+ ]? } ]? }",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font",
+    "Description": "Font shorthand",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 1,
+    "Syntax": "[ [ <font-style> || <font-variant> || <font-weight> || <font-stretch> ]? <font-size> [ / <line-height> ]? <font-family> ] | caption | icon | menu | message-box | small-caption | status-bar",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-size",
+    "Description": "Font size",
+    "Shorthand": "font",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "[ xx-small | s-small | small | medium | large | x-large | xx-large ] | [ larger | smaller ] | <length> | <percentage>",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "line-height",
+    "Description": "Sets the line height",
+    "Shorthand": "font",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "normal | <number> | <length> | <percentage>",
+    "Type": "Text",
+    "Example": "line-height: 1em;"
+  },
+  {
+    "Property": "font-family",
+    "Description": "Font family use priority",
+    "Shorthand": "font",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "[ <family-name> | serif | sans-serif | cursive | fantasy | monospace ]#",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-stretch",
+    "Description": "Select stretch type from font family",
+    "Shorthand": "font",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "normal | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-style",
+    "Description": "Font style",
+    "Shorthand": "font",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "normal | italic | oblique",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-weight",
+    "Description": "Font weight",
+    "Shorthand": "font",
+    "Animatable": "yes",
+    "CSS": 1,
+    "Syntax": "normal | bold | bolder | lighter | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-variant",
+    "Description": "Font-variant shorthand",
+    "Shorthand": "font",
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "normal | none | <font-variant-ligatures> || <font-variant-alternates> || <font-variant-caps> || <font-variant-numeric> || <font-variant-east-asian> || <font-variant-position>",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-variant-alternates",
+    "Description": "Enables glyphs in @font-feature-values",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | [ stylistic(IDENT) || historical-forms || styleset(IDENT#) || character-variant(IDENT#) || swash(IDENT) || ornaments(IDENT) || annotation(IDENT) ]",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-variant-caps",
+    "Description": "Enables glyphs for capital letters",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps",
+    "Type": "Font",
+    "Example": "font-variant-caps : small-caps;"
+  },
+  {
+    "Property": "font-variant-east-asian",
+    "Description": "Enables glyphs for East Asian scripts",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | [ [ jis78 | jis83 | jis90 | jis04 | simplified | traditional ] || [ full-width | proportional-width ] || ruby ]",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-variant-ligatures",
+    "Description": "Enables font ligatures",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | none | [ [ common-ligatures | no-common-ligatures ] || [ discretionary-ligatures | no-discretionary-ligatures ] || [ historical-ligatures | no-historical-ligatures ] || [ contextual | no-contextual ] ]",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-variant-numeric",
+    "Description": "Enables alternate glyphs for numbers, fractions, and ordinal markers",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | [ [ lining-nums | oldstyle-nums ] || [ proportional-nums | tabular-nums ] || [ diagonal-fractions | stacked-fractions ] || ordinal || slashed-zero ]",
+    "Type": "Font",
+    "Example": "font-variant-numeric: lining-nums tabular-nums diagonal-fractions ordinal slashed-zero;"
+  },
+  {
+    "Property": "font-variant-position",
+    "Description": "Enables glyphs for superscript and subscript",
+    "Shorthand": "font-variant",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | sub | super",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-feature-settings",
+    "Description": "Enables OpenType features (font-variant alternative)",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | [<string> [ <integer> | on | off ]? ]#",
+    "Type": "Font",
+    "Example": "font-feature-settings: \"smcp\", \"swsh\" 2"
+  },
+  {
+    "Property": "font-kerning",
+    "Description": "Use font kerning information",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | normal | none",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-language-override",
+    "Description": "Use language-specific glyphs in a typeface",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "normal | <language>",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-size-adjust",
+    "Description": "Lowercase ratio to preserve readability",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | <number>",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "font-synthesis",
+    "Description": "Browser synthesizes weight and style of missing typefaces",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | [ weight || style ]",
+    "Type": "Font",
+    "Example": 0
+  },
+  {
+    "Property": "direction",
+    "Description": "Text direction",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "ltr | rtl",
+    "Type": "Writing Modes",
+    "Example": 0
+  },
+  {
+    "Property": "text-orientation",
+    "Description": "Vertical text orientation",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "mixed | upright | sideways",
+    "Type": "Writing Modes",
+    "Example": 0
+  },
+  {
+    "Property": "text-combine-upright",
+    "Description": "Vertical text",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | all | [ digits <integer>? ]",
+    "Type": "Text",
+    "Example": 0
+  },
+  {
+    "Property": "unicode-bidi",
+    "Description": "Used with direction for multiple languages",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "normal | embed | isolate | bidi-override | isolate-override | plaintext",
+    "Type": "Writing Modes",
+    "Example": 0
+  },
+  {
+    "Property": "writing-mode",
+    "Description": "Vertical or horizontal text",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr",
+    "Type": "Writing Modes",
+    "Example": 0
+  },
+  {
+    "Property": "border-collapse",
+    "Description": "Table borders collapse",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "collapse | separate",
+    "Type": "Table",
+    "Example": 0
+  },
+  {
+    "Property": "border-spacing",
+    "Description": "Table borders spacing",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "<length> <length>?",
+    "Type": "Table",
+    "Example": 0
+  },
+  {
+    "Property": "caption-side",
+    "Description": "Placement of table caption",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "top | bottom | block-start | block-end | inline-start | inline-end",
+    "Type": "Table",
+    "Example": 0
+  },
+  {
+    "Property": "empty-cells",
+    "Description": "Borders and background display on empty cells in table",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "show | hide",
+    "Type": "Table",
+    "Example": 0
+  },
+  {
+    "Property": "table-layout",
+    "Description": "Table layout algorithm",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "auto | fixed",
+    "Type": "Table",
+    "Example": 0
+  },
+  {
+    "Property": "counter-increment",
+    "Description": "Increments counter(s)",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "[<user-ident> <integer>?]+ | none",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "counter-reset",
+    "Description": "Creates or resets counter(s)",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "[<user-ident> <integer>?]+ | none",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "list-style",
+    "Description": "List style shorthand",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "<list-style-type> || <list-style-position> || <list-style-image>",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "list-style-image",
+    "Description": "List marker image",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "url(URL) | none",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "list-style-position",
+    "Description": "List marker position",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "inside | outside",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "list-style-type",
+    "Description": "List marker type",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 1,
+    "Syntax": "[ <custom-ident> | symbols() ] | <string> | none",
+    "Type": "Lists and Counters",
+    "Example": 0
+  },
+  {
+    "Property": "@keyframes",
+    "Description": "Animation code",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 3,
+    "Syntax": "@keyframes <name> { [ [ from | to | <percentage> ] [, from | to | <percentage> ]* block ]* }",
+    "Type": "Animation",
+    "Example": "@keyframes fade-out {from {opacity:1;} to {opacity:0;}}"
+  },
+  {
+    "Property": "animation",
+    "Description": "Sets animation properties (shorthand)",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<animation-name> || <animation-duration> || <animation-timing-function> || <animation-delay> || <animation-iteration-count> || <animation-direction> || <animation-fill-mode> || <animation-play-state>",
+    "Type": "Animation",
+    "Example": "animation: fade-out 3s ease 3s 3 alternate both running;"
+  },
+  {
+    "Property": "animation-name",
+    "Description": "Sets animation name",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ none | IDENT ]#",
+    "Type": "Animation",
+    "Example": "animation-name: fade-out;"
+  },
+  {
+    "Property": "animation-duration",
+    "Description": "Sets animation cycle duration",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<time>#",
+    "Type": "Animation",
+    "Example": "animation-duration: 3s;"
+  },
+  {
+    "Property": "animation-timing-function",
+    "Description": "Sets animation speed curve",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ cubic-bezier(x1, y1, x2, y2) | steps(<integer steps number>, [ start | end ]?) | linear | ease | ease-in | ease-in-out | ease-out | step-start | step-end ]#",
+    "Type": "Animation",
+    "Example": "animation-timing-function: ease;"
+  },
+  {
+    "Property": "animation-delay",
+    "Description": "Sets delay before animation",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<time>#",
+    "Type": "Animation",
+    "Example": "animation-delay: 3s;"
+  },
+  {
+    "Property": "animation-iteration-count",
+    "Description": "Sets times to play animation",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ infinite | <number> ]#",
+    "Type": "Animation",
+    "Example": "animation-iteration-count: 3;"
+  },
+  {
+    "Property": "animation-direction",
+    "Description": "Sets animation direction",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ normal | reverse | alternate | alternate-reverse ]#",
+    "Type": "Animation",
+    "Example": "animation-direction: alternate;"
+  },
+  {
+    "Property": "animation-fill-mode",
+    "Description": "Sets style when animation is not excecuting",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ none | forwards | backwards | both ]#",
+    "Type": "Animation",
+    "Example": "animation-fill-mode: both;"
+  },
+  {
+    "Property": "animation-play-state",
+    "Description": "Sets animation play or pause behaviour",
+    "Shorthand": "animation",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ running | paused ]#",
+    "Type": "Animation",
+    "Example": "animation-play-state: running;"
+  },
+  {
+    "Property": "backface-visibility",
+    "Description": "Back face visibility of 3D element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "visible | hidden",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "perspective",
+    "Description": "Distance of z plane from viewer",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | <length>",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "perspective-origin",
+    "Description": "Postion of viewer (Vanishing point for perspective)",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "[ <percentage> | <length> | left | center | right | top | bottom] | [ [ <percentage> | <length> | left | center | right ] && [ <percentage> | <length> | top | center | bottom ] ]",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "transform",
+    "Description": "2D or 3D transformation",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | [ [matrix(<number> [, <number> ]{5,5}) || matrix3d(<number> [, <number> ]{15,15}) || translate(<length> | <percentage> [, <length> | <percentage> ]?) || translateX(<length> | <percentage>) || translateY(<length> | <percentage>) || translate3d(<length> | <percentage> , <length> | <percentage> , <length>) || translateZ(<length> | <percentage>) || scale(<number> [, <number> ]?> || scaleX(<number>) || scaleY(<number>) || scale3d(<number> , <number>, <number>) || scaleZ(<number>) || rotate(<angle>) || rotateX(<angle>) || rotateY(<angle>) || rotate3d(<number> , <number> , <number> , <angle>) || rotateZ(<angle>) || skew(<angle> [, <angle> ]) || skewX(<angle>) || skewY(<angle>) || perspective(<length>)]+ ]+",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "transform-origin",
+    "Description": "Position of transformed elements",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "[ <percentage> | <length> | left | center | right | top | bottom] | [ [ <percentage> | <length> | left | center | right ] && [ <percentage> | <length> | top | center | bottom ] ] <length>?",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "transform-style",
+    "Description": "How 3D nested elements render",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "flat | preserve-3d",
+    "Type": "Transform",
+    "Example": 0
+  },
+  {
+    "Property": "transition",
+    "Description": "Transition shorthand",
+    "Shorthand": "X",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ <transition-property> || <transition-duration> || <transition-timing-function> || <transition-delay> ]#",
+    "Type": "Transition",
+    "Example": 0
+  },
+  {
+    "Property": "transition-property",
+    "Description": "Sets the transition property name",
+    "Shorthand": "transition",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ none | all | IDENT ]#",
+    "Type": "Transition",
+    "Example": "transition-property: color;"
+  },
+  {
+    "Property": "transition-duration",
+    "Description": "Transition duration",
+    "Shorthand": "transition",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<time>#",
+    "Type": "Transition",
+    "Example": 0
+  },
+  {
+    "Property": "transition-timing-function",
+    "Description": "Transition speed curve",
+    "Shorthand": "transition",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ cubic-bezier(x1, y1, x2, y2) | steps(<integer steps number>, [ start | end ]?) | linear | ease | ease-in | ease-in-out | ease-out | step-start | step-end ]#",
+    "Type": "Transition",
+    "Example": 0
+  },
+  {
+    "Property": "transition-delay",
+    "Description": "Transition delay",
+    "Shorthand": "transition",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "<time>#",
+    "Type": "Transition",
+    "Example": 0
+  },
+  {
+    "Property": "box-sizing",
+    "Description": "What width and height include",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "content-box | border-box",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "content",
+    "Description": "Insert content in :before and :after",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "normal | none | [ <string> | url(<url>) | <counter> | attr() | open-quote | close-quote | no-open-quote | no-close-quote ]+",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "cursor",
+    "Description": "Cursor type",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "[ [ url(<url>)  [<x> <y>]?,]* [ auto | default | none | context-menu | help | pointer | progress | wait | cell | crosshair | text | vertical-text | alias | copy | move | no-drop | not-allowed | e-resize | n-resize | ne-resize | nw-resize | s-resize | se-resize | sw-resize | w-resize | ew-resize | ns-resize | nesw-resize | nwse-resize | col-resize | row-resize | all-scroll | zoom-in | zoom-out | grab | grabbing ] ]",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "ime-mode (obsolete)",
+    "Description": "Input method editor state for text fields",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | normal | active | inactive | disabled",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "outline",
+    "Description": "Outline shorthand (border that dont space)",
+    "Shorthand": 0,
+    "Animatable": "some",
+    "CSS": 2,
+    "Syntax": "<outline-color> || <outline-style> || <outline-width>",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "outline-color",
+    "Description": "Outline color",
+    "Shorthand": "outline",
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<color> | invert",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "outline-style",
+    "Description": "Outline style",
+    "Shorthand": "outline",
+    "Animatable": "no",
+    "CSS": 2,
+    "Syntax": "auto | [ none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset ]",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "outline-width",
+    "Description": "Outline width",
+    "Shorthand": "outline",
+    "Animatable": "yes",
+    "CSS": 2,
+    "Syntax": "<length> | thin | medium | thick",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "outline-offset",
+    "Description": "Outline offset",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<length>",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "resize",
+    "Description": "Ability to resize element",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | both | horizontal | vertical",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "text-overflow",
+    "Description": "Action on text overflow",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[ clip | ellipsis | <string> ]{1,2}",
+    "Type": "User Interface",
+    "Example": 0
+  },
+  {
+    "Property": "break-after (unsupported)",
+    "Description": "page-, column-, or region-break behavior after generated box",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "break-before (unsupported)",
+    "Description": "page-, column-, or region-break behavior before generated box",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | avoid | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "break-inside (unsupported)",
+    "Description": "page-, column-, or region-break behavior inside generated box",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | avoid | avoid-page | avoid-column | avoid-region",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "columns",
+    "Description": "Column shorthand",
+    "Shorthand": "X",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<column-width> || <column-count>",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-count",
+    "Description": "Element columns number",
+    "Shorthand": "columns",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<number> | auto",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-width",
+    "Description": "Element columns width",
+    "Shorthand": "columns",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<length> | auto",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-fill",
+    "Description": "Columns fill behavior",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | balance",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-gap",
+    "Description": "Gap between columns",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<length> | normal",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-rule",
+    "Description": "Column rule shorthand",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 3,
+    "Syntax": "<column-rule-width> || <column-rule-style> || <column-rule-color>",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-rule-color",
+    "Description": "Color of rule between columns",
+    "Shorthand": "column-rule",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<color>",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-rule-style",
+    "Description": "Styles the rule (line) between columns",
+    "Shorthand": "column-rule",
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset",
+    "Type": "Multi-column Layout",
+    "Example": "column-rule-style: solid;"
+  },
+  {
+    "Property": "column-rule-width",
+    "Description": "Width of rule between columns",
+    "Shorthand": "column-rule",
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<length> | thin | medium | thick",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "column-span",
+    "Description": "Columns number an element can span across",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "none | all",
+    "Type": "Multi-column Layout",
+    "Example": 0
+  },
+  {
+    "Property": "orphans",
+    "Description": "Sets the minimum number of lines that must be left at the bottom of a page when a page break occurs inside an element",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 2,
+    "Syntax": 0,
+    "Type": "Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "page-break-after",
+    "Description": "Sets the page-breaking behavior after an element",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 2,
+    "Syntax": 0,
+    "Type": "Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "page-break-before",
+    "Description": "Sets the page-breaking behavior before an element",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 2,
+    "Syntax": 0,
+    "Type": "Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "page-break-inside",
+    "Description": "Sets the page-breaking behavior inside an element",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 2,
+    "Syntax": 0,
+    "Type": "Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "marks",
+    "Description": "Adds crop and/or cross marks to the document",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 3,
+    "Syntax": 0,
+    "Type": "Generated Content for Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "quotes",
+    "Description": "Sets the type of quotation marks for embedded quotations",
+    "Shorthand": 0,
+    "Animatable": 0,
+    "CSS": 2,
+    "Syntax": 0,
+    "Type": "Generated Content for Paged Media",
+    "Example": 0
+  },
+  {
+    "Property": "filter",
+    "Description": "Element effects",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "none | [ blur( <length> ) | brightness( [ <number> | <percentage> ] ) | contrast( [ <number> | <percentage> ] ) | drop-shadow( <length>{2,3} <color>? ) | grayscale( [ <number> | <percentage> ] ) | hue-rotate( <angle> ) | invert( [ <number> | <percentage> ] ) | opacity( [ <number> | <percentage> ] ) | sepia( [ <number> | <percentage> ] ) | saturate( [ <number> | <percentage> ] ) | url(svg-url#element-id)  ]+",
+    "Type": "Filter Effects",
+    "Example": 0
+  },
+  {
+    "Property": "image-orientation",
+    "Description": "Correct image rotation",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "from-image | <angle> | [<angle>? flip]",
+    "Type": "Image Values and Replaced Content",
+    "Example": 0
+  },
+  {
+    "Property": "image-rendering",
+    "Description": "Scaled image rendering algorithm",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "auto | crisp-edges | pixelated",
+    "Type": "Image Values and Replaced Content",
+    "Example": 0
+  },
+  {
+    "Property": "image-resolution",
+    "Description": "Image resolution for raster",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "[from-image || <resolution>] && snap?",
+    "Type": "Image Values and Replaced Content",
+    "Example": 0
+  },
+  {
+    "Property": "object-fit",
+    "Description": "Options to fit content in box with width and height",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "fill | contain | cover | none | scale-down",
+    "Type": "Image Values and Replaced Content",
+    "Example": 0
+  },
+  {
+    "Property": "object-position",
+    "Description": "Alignment of element inside box",
+    "Shorthand": 0,
+    "Animatable": "yes",
+    "CSS": 3,
+    "Syntax": "<position>",
+    "Type": "Image Values and Replaced Content",
+    "Example": 0
+  },
+  {
+    "Property": "mask",
+    "Description": "Partial hiding of item",
+    "Shorthand": "X",
+    "Animatable": "some",
+    "CSS": 3,
+    "Syntax": "[ none | <image> | url(<url>) ] [ alpha | luminance | auto ]? || <position> [ / [ [ <length> | <percentage> | auto ]{1,2} | cover | contain ] ]? || [ repeat-x | repeat-y | [repeat | space | round | no-repeat]{1,2} ] || [ <shape-box> | fill-box | stroke-box | view-box ] || [ [ [ [ border-box | padding-box | content-box ] | margin-box ] | fill-box | stroke-box | view-box ] | no-clip ] || [ add | subtract | intersect | exclude ]",
+    "Type": "Masking",
+    "Example": 0
+  },
+  {
+    "Property": "mask-type",
+    "Description": "Properties for SVG <mask>",
+    "Shorthand": 0,
+    "Animatable": "no",
+    "CSS": 3,
+    "Syntax": "luminance | alpha",
+    "Type": "Masking",
+    "Example": 0
+  }
+]

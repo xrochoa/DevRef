@@ -1,74 +1,63 @@
-<div class="jumbotron text-center">
-    <h1> <img style="height: 80px; width: 80px;" src="http://sass-lang.com/assets/img/logos/logo-b6e1ef6e.svg"> Sass</h1>
-    <p>Sass gives CSS useful features.</p>
-    <p>The code is written in a scss file and then compiled to css.</p>
-    <p>The compiler runs from the terminal and requires Ruby.</p>
-    <a href="http://sass-lang.com/">Website</a> -
-    <a href="http://sassmeister.com/">Online Compiler Tool</a>
-</div>
-<div class="hidden-xs hidden-sm">
-    <div class="col-xs-12 col-sm-12 label-danger text-center"><h4>COMMAND-LINE OPTIONS</h4></div>
-    <div class="col-xs-12 col-sm-12 bg-primary">
-        <div class="col-xs-2 col-sm-2 thumb text-center">COMMAND</div>
-        <div class="col-xs-2 col-sm-2 thumb text-center">OPTIONS</div>
-        <div class="col-xs-3 col-sm-3 thumb text-center">DESCRIPTION</div>
-        <div class="col-xs-2 col-sm-2 thumb text-center">ARGUMENTS</div>
-        <div class="col-xs-3 col-sm-3 thumb text-center">DESCRIPTION</div>
-    </div>
-    <div class="col-xs-12 col-sm-12 square" ng-repeat='item in data.SassCLIArr'>
-        <div class="col-xs-2 col-sm-2 thumb text-center">
-            <span>sass</span>
+<link rel="stylesheet" type="text/css" href="./assets/css/css/style.css">
+<section id="section-css" ng-controller="cssCtrl">
+    <div class="legend">
+        <div>
+            VERSION 1
+            <span class="circle sm green"></span> 2
+            <span class="circle sm yellow"></span> 3
+            <span class="circle sm red"></span>
         </div>
-
-        <div class="col-xs-2 col-sm-2 thumb text-center">
-            <span>{{item.opt}}</span>
+        <div>
+            ANIMATABLE
+            <span class="circle sm purple"></span>
         </div>
-
-        <div class="col-xs-3 col-sm-3 thumb text-center">
-            <ul>
-                <li>{{item.desc}}</li>
-            </ul>
+        <div>
+            SHORTHAND
+            <span class="circle sm black"></span>
         </div>
-        <div class="col-xs-2 col-sm-2 thumb text-center">
-            <ul>
-                <li ng-repeat='arg in item.arg'>{{arg}}</li>
-            </ul>
-        </div>
-        <div class="col-xs-3 col-sm-3 thumb text-center">
-            <ul>
-                <li ng-repeat='argdesc in item.argdesc'>{{argdesc}}</li>
-            </ul>
-        </div>
-
-    </div>
-
-    <div class="col-xs-12 col-sm-12 label-danger text-center"><h4>TOPICS</h4></div>
-</div>
-
-<div class="col-xs-4 col-sm-4" ng-repeat="item in data.SassArr">
-    <div class="square">
-        <div class="content">
-            <div class="table text-center">
-                <h2>{{item.topic}}</h2>
-                <div class="hidden-xs">
-                    <span>{{item.desc}}</span>
-                    <hr>
-                    <code>{{item.syntax}}</code>
-                    <hr>
-                </div>
-                <div class="hidden-xs hidden-sm">
-
-                    <div class="col-xs-12 col-sm-12 bg-primary">
-                        <div class="col-xs-6 col-sm-6 thumb text-center">Example Code</div>
-                        <div class="col-xs-6 col-sm-6 thumb text-center">Compiled</div>
-                    </div>
-                    <div class="col-xs-12 col-sm-12">
-                        <textarea rows="20" class="col-xs-6 col-sm-6 thumb text-left" contenteditable="true" ng-model="item.scss"></textarea>
-                        <textarea rows="20" class="col-xs-6 col-sm-6 thumb text-left" contenteditable="true" ng-model="item.result"></textarea>
-                    </div>
-                </div>
-            </div>
+        <div>SEARCH
+            <input ng-model="search" />
         </div>
     </div>
-</div>
-</div>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <h4>TYPE</h4></th>
+                <th>
+                    <h4>PROPERTY</h4></th>
+                <th>
+                    <h4>DESCRIPTION</h4></th>
+                <th>
+                    <h4>SYNTAX</h4></th>
+                <th>
+                    <h4>EXAMPLE</h4></th>
+                <th>
+                    <h4>VISUAL</h4></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in data | filter:{ Property: search }" ng-style="{'background-color': palette[row.color]}">
+                <td>{{row.Type}}</td>
+                <td>{{row.Property}}</td>
+                <td>{{row.Description}}</td>
+                <td>{{row.Syntax}}</td>
+                <td>{{row.Example}}</td>
+                <td>
+                    <span class="circle lg" ng-class="{'purple': row.Animatable == 'yes'}">
+                        <span class="circle md" ng-class="{1: 'green', 2: 'yellow', 3: 'red'}[row.CSS]">
+                            <span class="circle sm" ng-class="{'black': row.Shorthand === 'X'}"></span>
+                    </span>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!--     <table>
+        <tr >
+            <td>{{row.Property}}</td>
+            <td>{{row.Description}}</td>
+            <td>{{row.Syntax}}</td>
+        </tr>
+    </table> -->
+</section>
